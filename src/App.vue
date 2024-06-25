@@ -6,8 +6,8 @@
         <img width="40" src="./assets/images/chile_bandera.png" alt="" />
       </div>
       <v-container fluid>
-      <img  class="image" src="./assets/images/foto_elon.jpg" alt="">
-    </v-container>
+        <img class="image" src="./assets/images/foto_elon.jpg" alt="">
+      </v-container>
       <p>{{ run }}</p>
     </aside>
 
@@ -23,13 +23,13 @@
         </article>
         <article>
           <header>NOMBRES</header>
-          <span>{{nombres}}</span>
+          <span>{{ nombres }}</span>
         </article>
 
         <div class="grid-2-colums">
           <article>
             <header>NACIONALIDAD</header>
-            <span>{{nacionalidad}}</span>
+            <span>{{ nacionalidad }}</span>
           </article>
           <article>
             <header>SEXO</header>
@@ -71,7 +71,7 @@ export default {
   name: 'App',
   data() {
     return {
-  
+
       run: "22.222.222-2",
       apellidos: "MUSK",
       nombres: "ELON REEVE",
@@ -164,8 +164,9 @@ main section .grid-2-colums {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-.image{
-  width: 100px;
+
+.image {
+  width: 120px;
   padding-top: 20px;
 }
 </style>
